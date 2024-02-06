@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link href="C:\Users\gusti\OneDrive\Desktop\Coding Projects\gustie44.github.io\Cheatsheet\Styles\cheatsheet.css" type="text/css" rel="stylesheet"/>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Revolution&family=Sixtyfour&display=swap');
+              </style>
+            <title>HTML and CSS Cheatsheet</title>
+        </head>
+
+        <body>
+        <main>
+<!--Header-->
+            <header>
+                <h1>HTML and CSS Cheatsheet</h1>
+            </header>
+
+<!--Page navigation-->
+            <nav>
+                <ul>
+                    <li>HTML Tables</li>
+                    <li>Semantic Tags</li>
+                    <li>CSS Selectors</li>
+                    <li>Common CSS Properties</li>
+                </ul>
+            </nav>
+
+<!--HTML Tables-->
+            <article class="tables">
+
+<!--Table Tags-->
+                <section class="heading">
+                    <h2>Table Tags</h2>
+                </section>
+
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th>Tags</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td><span class="code">&lttable&gt</span></td>
+                                <td>Table</td>
+                                <td>The wrapper element for all HTML tables.</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="code">&ltthead&gt</span></td>
+                                <td>Table Head</td>
+                                <td>The set of rows defining the column headers in a table.</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="code">&lttbody&gt</span></td>
+                                <td>Table Body</td>
+                                <td>The set of rows containing actual table data.</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="code">&lttr&gt</span></td>
+                                <td>Table Row</td>
+                                <td>The table row container.</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="code">&lttd&gt</span></td>
+                                <td>Table Data</td>
+                                <td>The table row container.</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="code">&lttfoot&gt</span></td>
+                                <td>Table Foot</td>
+                                <td>The set of rows defining the footer in a table.</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </section>
+
+<!--Table Attributes-->
+                <section class="heading">
+                    <h2>Table Attributes</h2>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th>Attributes</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="code">colspan</span></td>
+                                <td>Column Span</td>
+                                <td>Defines how many columns a td element should span.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">rowspan</span></td>
+                                <td>Row Span</td>
+                                <td>Defines how many rows a td element should span.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+<!--How to use tables-->
+                <section class="heading">
+                    <h3>How to Use</h3>
+                </section>
+                <section class="content">
+                    <p>First, to set up your table, you'll need to build your HTML skeleton for the table. Think of the table as a mini HTML document. Declare your table using the "table" tag. Next, your table will need a head and a body, just like a full HTML document. This can be accomplished using the "thead" and "tbody" tags. Within the "thead" section, you'll need to name the coloumns of the table. <strong>(Note: Table columns span left to right while table rows span top to bottom)</strong></p>
+                </section>
+            </article>
+
+<!--HTML Semantic Tags-->
+            <article class="semantic tags">
+                <section class="heading">
+                    <h2>Semantic Elements</h2>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th>Element</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="code">&ltarticle&gt</span></td>
+                                <td>Article</td>
+                                <td>Specifies independent, self-contained content.</td>
+                            </tr>
+                            <tr>
+                                <td><spa class="code"n>&ltaside&gt</span></td>
+                                <td>Aside</td>
+                                <td>Defines the section of a document. Not self-contained.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltdetails&gt</span></td>
+                                <td>Details</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltfigcaption&gt</span></td>
+                                <td>Figure Captions</td>
+                                <td>Applies captions to a figure.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltfigure&gt</span></td>
+                                <td>Figure</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltfooter&gt</span></td>
+                                <td>Footer</td>
+                                <td>Defines a footer for a document or a section.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltheader&gt</span></td>
+                                <td>Header</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltmain&gt</span></td>
+                                <td>Main</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltmark&gt</span></td>
+                                <td>Mark</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltnav&gt</span></td>
+                                <td>Navigation</td>
+                                <td>Defines a set of navigation links, typically in an unordered list.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltsection&gt</span></td>
+                                <td>Section</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&ltsummary&gt</span></td>
+                                <td>Summary</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">&lttime&gt</span></td>
+                                <td>Time</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+<!--CSS Selectors and Properties-->
+            <article class="selectors">
+                <section class="heading">
+                    <h2>CSS Selectors</h2>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th>Syntax</th>
+                            <th>Basic Selectors</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="code">* {property:value;}</span></td>
+                                <td>Universal</td>
+                                <td>Selects all elements on the pages.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">p {property:value;}</span></td>
+                                <td>Type</td>
+                                <td>Selects all HTML tag/elements of a given type in your document.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">#id {property:value}</span></td>
+                                <td>ID</td>
+                                <td>Selects an element based on the value of its unique ID attribute.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">.class {property:value;}</span></td>
+                                <td>Class</td>
+                                <td>Selects all elements in the document that have the given class attribute.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">a[attribute=value] {property:value;}</span></td>
+                                <td>Attribute</td>
+                                <td>Select all elements that have a specified attribute.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">selector1 selector2/ selector1 + selector2 / selector1 > selector2 {property:value;}</span></td>
+                                <td>Combinators</td>
+                                <td>Complex selectors consisting of more than one selectors having some relationship between them.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="code">selector: pseudo-class {property:value;}</span></td>
+                                <td>Pseudo</td>
+                                <td>Define the special state of an element to add an effect to an existing element based on its states.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+<!--Common CSS Properties-->
+            <article>
+                <section class="heading">
+                    <h2>Common CSS Properties</h2>
+                </section>
+                <section class="heading">
+                    <h3>Borders</h3>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th>Properties</th>
+                            <th>Variations</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="code">border-top</span></td>
+                                <td><p class="code">border-top-width</p><p class="code">border-style</p><p class="code">border-color</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code">border-color</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code">border-style</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p>thin | medium | thick | <em>length</em></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p>thin | medium | thick | <em>length</em></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code"></p><p class="code"></p><p class="code"></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code"></p><p class="code"></p><p class="code"></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code"></p><p class="code"></p><p class="code"></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code"></p><p class="code"></p><p class="code"></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code"></p><p class="code"></p><p class="code"></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code"></p><p class="code"></p><p class="code"></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="code"></span></td>
+                                <td><p class="code"></p><p class="code"></p><p class="code"></p></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="heading">
+                    <h3>Transitions</h3>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code"><span></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="heading">
+                    <h3>Box Model</h3>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code"><span></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="heading">
+                    <h3>Fonts</h3>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code"><span></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="heading">
+                    <h3>Color</h3>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code"><span></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+<!--Buttons-->
+            <article>
+                <section class="heading">
+                    <h2>Buttons</h2>
+                </section>
+                <section class="content">
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code"><span></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+<!--Footer-->
+            <footer>
+                <p id="footer"><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Web Documentation</a> | <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> | <a href="https://github.com/" target="_blank">GitHub</a></p>
+            </footer>
+        </main>
+        </body>
+    </html>
